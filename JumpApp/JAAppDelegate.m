@@ -10,9 +10,12 @@
 
 @implementation JAAppDelegate
 
+@synthesize jumpManager;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    jumpManager = [[JAJumpManager alloc] init];
 }
 
 @end

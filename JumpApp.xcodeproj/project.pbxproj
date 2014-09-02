@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F48BDE2D3884B1A8EE61E0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD8AD3C44174A81927C86FB /* libPods.a */; };
 		C97127DF19B240F600ED7616 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97127DE19B240F600ED7616 /* Cocoa.framework */; };
 		C97127E919B240F600ED7616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C97127E719B240F600ED7616 /* InfoPlist.strings */; };
 		C97127EB19B240F600ED7616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C97127EA19B240F600ED7616 /* main.m */; };
@@ -18,6 +19,13 @@
 		C97127FF19B240F600ED7616 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97127DE19B240F600ED7616 /* Cocoa.framework */; };
 		C971280719B240F600ED7616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C971280519B240F600ED7616 /* InfoPlist.strings */; };
 		C971280919B240F600ED7616 /* JumpAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C971280819B240F600ED7616 /* JumpAppTests.m */; };
+		C971281319B2414600ED7616 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C971281219B2414600ED7616 /* libicucore.dylib */; };
+		C971281419B2414B00ED7616 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97127E319B240F600ED7616 /* Foundation.framework */; };
+		C971281619B2415000ED7616 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971281519B2415000ED7616 /* Security.framework */; };
+		C971281819B2415500ED7616 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971281719B2415500ED7616 /* CFNetwork.framework */; };
+		C971282819B2418500ED7616 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971282319B2417900ED7616 /* SocketRocket.framework */; };
+		C971282A19B2419400ED7616 /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C971282319B2417900ED7616 /* SocketRocket.framework */; };
+		C971282D19B241B900ED7616 /* JAJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C971282C19B241B900ED7616 /* JAJumpManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +36,52 @@
 			remoteGlobalIDString = C97127DA19B240F600ED7616;
 			remoteInfo = JumpApp;
 		};
+		C971282019B2417900ED7616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971281919B2417900ED7616 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		C971282219B2417900ED7616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971281919B2417900ED7616 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		C971282419B2417900ED7616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971281919B2417900ED7616 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		C971282619B2417900ED7616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971281919B2417900ED7616 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C971282919B2418A00ED7616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C971282A19B2419400ED7616 /* SocketRocket.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1AD8AD3C44174A81927C86FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F368C0963AF4004B5044E62 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C97127DB19B240F600ED7616 /* JumpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97127DE19B240F600ED7616 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C97127E119B240F600ED7616 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +101,12 @@
 		C971280419B240F600ED7616 /* JumpAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JumpAppTests-Info.plist"; sourceTree = "<group>"; };
 		C971280619B240F600ED7616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C971280819B240F600ED7616 /* JumpAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpAppTests.m; sourceTree = "<group>"; };
+		C971281219B2414600ED7616 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		C971281519B2415000ED7616 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C971281719B2415500ED7616 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C971281919B2417900ED7616 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = ../../../Desktop/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		C971282B19B241B900ED7616 /* JAJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAJumpManager.h; sourceTree = "<group>"; };
+		C971282C19B241B900ED7616 /* JAJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAJumpManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +114,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C971282819B2418500ED7616 /* SocketRocket.framework in Frameworks */,
+				C971281819B2415500ED7616 /* CFNetwork.framework in Frameworks */,
+				C971281619B2415000ED7616 /* Security.framework in Frameworks */,
+				C971281419B2414B00ED7616 /* Foundation.framework in Frameworks */,
+				C971281319B2414600ED7616 /* libicucore.dylib in Frameworks */,
 				C97127DF19B240F600ED7616 /* Cocoa.framework in Frameworks */,
+				2F48BDE2D3884B1A8EE61E0A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +139,12 @@
 		C97127D219B240F600ED7616 = {
 			isa = PBXGroup;
 			children = (
+				C971281919B2417900ED7616 /* SocketRocket.xcodeproj */,
 				C97127E419B240F600ED7616 /* JumpApp */,
 				C971280219B240F600ED7616 /* JumpAppTests */,
 				C97127DD19B240F600ED7616 /* Frameworks */,
 				C97127DC19B240F600ED7616 /* Products */,
+				5F368C0963AF4004B5044E62 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +160,13 @@
 		C97127DD19B240F600ED7616 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C971281719B2415500ED7616 /* CFNetwork.framework */,
+				C971281519B2415000ED7616 /* Security.framework */,
+				C971281219B2414600ED7616 /* libicucore.dylib */,
 				C97127DE19B240F600ED7616 /* Cocoa.framework */,
 				C97127FD19B240F600ED7616 /* XCTest.framework */,
 				C97127E019B240F600ED7616 /* Other Frameworks */,
+				1AD8AD3C44174A81927C86FB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +189,8 @@
 				C97127F319B240F600ED7616 /* MainMenu.xib */,
 				C97127F619B240F600ED7616 /* Images.xcassets */,
 				C97127E519B240F600ED7616 /* Supporting Files */,
+				C971282B19B241B900ED7616 /* JAJumpManager.h */,
+				C971282C19B241B900ED7616 /* JAJumpManager.m */,
 			);
 			path = JumpApp;
 			sourceTree = "<group>";
@@ -154,6 +225,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C971281A19B2417900ED7616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C971282119B2417900ED7616 /* libSocketRocket.a */,
+				C971282319B2417900ED7616 /* SocketRocket.framework */,
+				C971282519B2417900ED7616 /* SRWebSocketTests.octest */,
+				C971282719B2417900ED7616 /* TestChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C971280C19B240F600ED7616 /* Build configuration list for PBXNativeTarget "JumpApp" */;
 			buildPhases = (
+				55B0182DF803416E9F181B85 /* Check Pods Manifest.lock */,
 				C97127D719B240F600ED7616 /* Sources */,
 				C97127D819B240F600ED7616 /* Frameworks */,
 				C97127D919B240F600ED7616 /* Resources */,
+				51CCDE76AC974ED287FFC1BC /* Copy Pods Resources */,
+				C971282919B2418A00ED7616 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -218,6 +303,12 @@
 			mainGroup = C97127D219B240F600ED7616;
 			productRefGroup = C97127DC19B240F600ED7616 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C971281A19B2417900ED7616 /* Products */;
+					ProjectRef = C971281919B2417900ED7616 /* SocketRocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C97127DA19B240F600ED7616 /* JumpApp */,
@@ -225,6 +316,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C971282119B2417900ED7616 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = C971282019B2417900ED7616 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971282319B2417900ED7616 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = C971282219B2417900ED7616 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971282519B2417900ED7616 /* SRWebSocketTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.octest;
+			remoteRef = C971282419B2417900ED7616 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971282719B2417900ED7616 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = C971282619B2417900ED7616 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C97127D919B240F600ED7616 /* Resources */ = {
@@ -248,11 +370,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51CCDE76AC974ED287FFC1BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55B0182DF803416E9F181B85 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C97127D719B240F600ED7616 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C971282D19B241B900ED7616 /* JAJumpManager.m in Sources */,
 				C97127EB19B240F600ED7616 /* main.m in Sources */,
 				C97127F219B240F600ED7616 /* JAAppDelegate.m in Sources */,
 			);
@@ -384,6 +540,7 @@
 		};
 		C971280D19B240F600ED7616 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F368C0963AF4004B5044E62 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -397,6 +554,7 @@
 		};
 		C971280E19B240F600ED7616 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F368C0963AF4004B5044E62 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -467,6 +625,7 @@
 				C971280E19B240F600ED7616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C971280F19B240F600ED7616 /* Build configuration list for PBXNativeTarget "JumpAppTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +634,7 @@
 				C971281119B240F600ED7616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
